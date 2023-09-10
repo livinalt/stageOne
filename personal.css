@@ -1,0 +1,86 @@
+    
+      
+   /* Media Query for Mobile Devices */
+     @media (max-width: 480px) {
+        body {
+            background-color: white;
+            
+        }
+    }
+      
+    /* Media Query for low resolution  Tablets, Ipads */
+    @media (min-width: 481px) and (max-width: 767px) {
+        body {
+            background-color:white;
+        }
+    }
+      
+    /* Media Query for Tablets Ipads portrait mode */
+    @media (min-width: 768px) and (max-width: 1024px){
+        body {
+            background-color: white;
+        }
+    }
+      
+    /* Media Query for Laptops and Desktops */
+    @media (min-width: 1025px) and (max-width: 1280px){
+        body {
+            background-color: white;
+        }
+    }
+      
+    /* Media Query for Large screens */
+    @media (min-width: 1281px) {
+        body {
+            /*background-color: white;*/
+            background-image: linear-gradient(to right green,white);
+     }
+    }
+    
+    .container{
+        background-color: rgb(243, 243, 243);
+        border: 1px solid rgb(211, 211, 211);
+        border-radius: 5px;
+        width: 40%;
+        display: flex;
+        align-items: center;  
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .leftProfile{
+        padding: 60px 70px 60px 70px;
+        background-color: white;        
+    }
+
+    .rightProfile{
+        padding: 70px 50px 50px 50px;
+        text-align: center;
+                    
+    }
+
+    span{
+        font-family: 'Poppins', sans-serif;
+        font-size: 0.6rem;
+        color: rgb(63, 62, 62);
+        font-weight: 300;
+    }
+
+    .dayStyle, .timeStyle, .trackStyle, .nameStyle  {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        color: black;
+    }
+    
+    .githubImage{
+        width: 20%;
+    }
+
+    .dispImage{
+        width: 70%;
+             
+    }
+
+   
