@@ -29,8 +29,8 @@
         let dispTime = new Date();
         let standardMilliSeconds = dispTime.getUTCMilliseconds();
         let newTime = (standardMilliSeconds + "ms");
-        console.log(newTime);
-        return newTime;
+        console.log(standardMilliSeconds);
+        return standardMilliSeconds;
     }
     time();
     setInterval(time, 1000);
