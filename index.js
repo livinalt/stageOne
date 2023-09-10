@@ -20,8 +20,11 @@
     }
      dayOfWeek();
 
+     setInterval(function () {
+
     // now to using DOM to manipulate and reflect on HTML page
     document.querySelector('[data-testid="currentDayOfTheWeek"]').innerHTML =  dayOfWeek();
+    }, 1000);
 
 
     //to get the time
@@ -29,14 +32,15 @@
         let dispTime = new Date();
         let standardMilliSeconds = dispTime.getUTCMilliseconds();
         let newTime = (standardMilliSeconds + "ms");
-        console.log(standardMilliSeconds);
-        return standardMilliSeconds;
+        console.log(newTime);
+        return newTime;
     }
     time();
     setInterval(time, 1000);
-    
+    setInterval(function () {
     document.querySelector('[data-testid="currentUTCTime"]').innerHTML = time();
+    }, 1000);
     
     //clickable link to the github repo
 
-    document.querySelector('[data-testId="githubURL"]').innerHTML = "Click here";
+    document.querySelector('[data-testId="githubURL"]').innerHTML = '<a href="https://github.com/livinalt/stageOne">Visit Repo</a>';
