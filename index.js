@@ -33,9 +33,10 @@
         return newTime;
     }
     time();
-
+    setInterval(time, 1000);
+    
     document.querySelector('[data-testid="currentUTCTime"]').innerHTML = time();
     
     //clickable link to the github repo
 
-    document.querySelector('[data-testId="githubURL"]').innerHTML = "Click here"
+    document.querySelector('[data-testId="githubURL"]').innerHTML = "Click here";
